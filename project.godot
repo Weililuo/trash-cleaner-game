@@ -64,4 +64,3 @@ ui_down={
 
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="mobile"
-"extendsCharacterBody2D#æºå¨äººçç§»å¨éåº¦@exportvarspeed:float"=300.0
