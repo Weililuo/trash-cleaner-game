@@ -24,3 +24,15 @@ If you want to play or edit the project locally:
 1. Clone this repository to your local machine:
    ```bash
    git clone [https://github.com/Weililuo/trash-cleaner-game.git](https://github.com/Weililuo/trash-cleaner-game.git)
+
+2. Download and install **Godot Engine 4**.
+3. Open Godot, click **Import**, and navigate to the folder where you cloned this repository.
+4. Select the `project.godot` file to load the game.
+5. Press `F6` to run the main scene!
+
+## 👨‍💻 Author
+
+Developed by **Eric Luo**. 
+
+---
+*Built with passion and a focus on satisfying game feel and GDScript architecture.*
