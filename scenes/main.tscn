@@ -1,14 +1,14 @@
 [gd_scene format=3 uid="uid://c6eoq1f5jk25a"]
 
-[ext_resource type="Script" uid="uid://cbcm20ssdayu1" path="res://trash_spawner.gd" id="1_ig7tw"]
-[ext_resource type="Script" uid="uid://t8w3jbsdhslx" path="res://player.gd" id="2_h2yge"]
+[ext_resource type="Script" uid="uid://cbcm20ssdayu1" path="res://scripts/trash_spawner.gd" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://t8w3jbsdhslx" path="res://scripts/player.gd" id="2_h2yge"]
 [ext_resource type="Texture2D" uid="uid://c2ny05s2454du" path="res://Images/robot.png" id="3_h2yge"]
-[ext_resource type="PackedScene" uid="uid://b04pxdscwp0lo" path="res://Trash.tscn" id="3_lquwl"]
+[ext_resource type="PackedScene" uid="uid://b04pxdscwp0lo" path="res://scenes/Trash.tscn" id="3_lquwl"]
 [ext_resource type="Texture2D" uid="uid://cpfsdhyyrfl7o" path="res://Images/background.png" id="4_1bvp3"]
-[ext_resource type="PackedScene" uid="uid://cbal1bbb11hi0" path="res://game_over_panel.tscn" id="4_kek77"]
-[ext_resource type="PackedScene" uid="uid://b4y3ca8r756nw" path="res://smoke.tscn" id="5_7mycd"]
+[ext_resource type="PackedScene" uid="uid://cbal1bbb11hi0" path="res://scenes/game_over_panel.tscn" id="4_kek77"]
+[ext_resource type="PackedScene" uid="uid://b4y3ca8r756nw" path="res://scenes/smoke.tscn" id="5_7mycd"]
 [ext_resource type="AudioStream" uid="uid://0ltcphg4qlyi" path="res://Sounds/Weapon Change.mp3" id="7_5vw27"]
-[ext_resource type="Script" uid="uid://df5a2hl7p5spy" path="res://bgm_player.gd" id="7_272bh"]
+[ext_resource type="Script" uid="uid://df5a2hl7p5spy" path="res://scripts/bgm_player.gd" id="7_272bh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6835a"]
 size = Vector2(371.76465, 497.8824)

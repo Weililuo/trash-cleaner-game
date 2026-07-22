@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cbal1bbb11hi0"]
 
-[ext_resource type="Script" uid="uid://dq476ht8nfs50" path="res://game_over_panel.gd" id="1_7o30t"]
+[ext_resource type="Script" uid="uid://dq476ht8nfs50" path="res://scripts/game_over_panel.gd" id="1_7o30t"]
 [ext_resource type="Texture2D" uid="uid://f164h23u1anc" path="res://Images/game over.jpg" id="2_lf0co"]
 [ext_resource type="AudioStream" uid="uid://c86m4ig26psjx" path="res://Sounds/GAME OVER Sound.wav" id="3_wqac2"]
 

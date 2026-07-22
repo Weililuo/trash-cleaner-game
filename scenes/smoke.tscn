@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b4y3ca8r756nw"]
 
 [ext_resource type="Texture2D" uid="uid://caqsfm0curdie" path="res://Images/smoke effects.png" id="1_ca0x4"]
-[ext_resource type="Script" uid="uid://67h6fvsg2bxo" path="res://smoke.gd" id="2_ca0x4"]
+[ext_resource type="Script" uid="uid://67h6fvsg2bxo" path="res://scripts/smoke.gd" id="2_ca0x4"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wq652"]
 atlas = ExtResource("1_ca0x4")
