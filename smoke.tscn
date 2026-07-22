@@ -1,0 +1,71 @@
+[gd_scene format=3 uid="uid://b4y3ca8r756nw"]
+
+[ext_resource type="Texture2D" uid="uid://caqsfm0curdie" path="res://Images/smoke effects.png" id="1_ca0x4"]
+[ext_resource type="Script" uid="uid://67h6fvsg2bxo" path="res://smoke.gd" id="2_ca0x4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wq652"]
+atlas = ExtResource("1_ca0x4")
+region = Rect2(0, 0, 224, 224)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1p3ic"]
+atlas = ExtResource("1_ca0x4")
+region = Rect2(224, 0, 224, 224)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s4j4g"]
+atlas = ExtResource("1_ca0x4")
+region = Rect2(448, 0, 224, 224)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hceqq"]
+atlas = ExtResource("1_ca0x4")
+region = Rect2(672, 0, 224, 224)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2s3a3"]
+atlas = ExtResource("1_ca0x4")
+region = Rect2(896, 0, 224, 224)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_phybj"]
+atlas = ExtResource("1_ca0x4")
+region = Rect2(1120, 0, 224, 224)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ymv66"]
+atlas = ExtResource("1_ca0x4")
+region = Rect2(1344, 0, 224, 224)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6835a"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wq652")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1p3ic")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s4j4g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hceqq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2s3a3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_phybj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ymv66")
+}],
+"loop": 0,
+"name": &"smoke",
+"speed": 10.0
+}]
+
+[node name="smoke" type="AnimatedSprite2D" unique_id=217071216]
+visible = false
+z_index = 1
+z_as_relative = false
+sprite_frames = SubResource("SpriteFrames_6835a")
+animation = &"smoke"
+frame = 6
+frame_progress = 1.0
+script = ExtResource("2_ca0x4")

@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://c6eoq1f5jk25a"]
+
+[ext_resource type="Script" uid="uid://cbcm20ssdayu1" path="res://trash_spawner.gd" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://t8w3jbsdhslx" path="res://player.gd" id="2_h2yge"]
+[ext_resource type="Texture2D" uid="uid://c2ny05s2454du" path="res://Images/robot.png" id="3_h2yge"]
+[ext_resource type="PackedScene" uid="uid://b04pxdscwp0lo" path="res://Trash.tscn" id="3_lquwl"]
+[ext_resource type="Texture2D" uid="uid://cpfsdhyyrfl7o" path="res://Images/background.png" id="4_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://cbal1bbb11hi0" path="res://game_over_panel.tscn" id="4_kek77"]
+[ext_resource type="PackedScene" uid="uid://b4y3ca8r756nw" path="res://smoke.tscn" id="5_7mycd"]
+[ext_resource type="AudioStream" uid="uid://0ltcphg4qlyi" path="res://Sounds/Weapon Change.mp3" id="7_5vw27"]
+[ext_resource type="Script" uid="uid://df5a2hl7p5spy" path="res://bgm_player.gd" id="7_272bh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6835a"]
+size = Vector2(371.76465, 497.8824)
+
+[node name="Node2D" type="Node2D" unique_id=985809057]
+
+[node name="MapBackground" type="TextureRect" parent="." unique_id=1153490059]
+texture_filter = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 4110.285
+offset_bottom = 2279.475
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_1bvp3")
+expand_mode = 1
+
+[node name="TrashSpawner" type="Node" parent="." unique_id=1557037752]
+script = ExtResource("1_ig7tw")
+trash_scene = ExtResource("3_lquwl")
+max_trash_allowed = 8
+game_over_panel_scene = ExtResource("4_kek77")
+
+[node name="Timer" type="Timer" parent="TrashSpawner" unique_id=14352538]
+autostart = true
+
+[node name="Player" type="CharacterBody2D" parent="." unique_id=104952421]
+position = Vector2(1900, 1000)
+scale = Vector2(0.85, 0.85)
+script = ExtResource("2_h2yge")
+smoke_scene = ExtResource("5_7mycd")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=1886283741]
+texture = ExtResource("3_h2yge")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=1414656758]
+position = Vector2(0, 3.05896)
+scale = Vector2(1.0000002, 1.0000002)
+shape = SubResource("RectangleShape2D_6835a")
+
+[node name="BGM" type="AudioStreamPlayer" parent="." unique_id=934446293]
+stream = ExtResource("7_5vw27")
+autoplay = true
+script = ExtResource("7_272bh")

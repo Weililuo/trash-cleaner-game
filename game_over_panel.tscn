@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://cbal1bbb11hi0"]
+
+[ext_resource type="Script" uid="uid://dq476ht8nfs50" path="res://game_over_panel.gd" id="1_7o30t"]
+[ext_resource type="Texture2D" uid="uid://f164h23u1anc" path="res://Images/game over.jpg" id="2_lf0co"]
+[ext_resource type="AudioStream" uid="uid://c86m4ig26psjx" path="res://Sounds/GAME OVER Sound.wav" id="3_wqac2"]
+
+[node name="GameOverPanel" type="CanvasLayer" unique_id=1183451103]
+process_mode = 3
+script = ExtResource("1_7o30t")
+
+[node name="BackgroundMask" type="ColorRect" parent="." unique_id=1547760333]
+anchors_preset = -1
+anchor_right = 0.952
+anchor_bottom = 1.0860001
+offset_right = 1829.1599
+offset_bottom = 1172.1199
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="GameOverImage" type="TextureRect" parent="." unique_id=677386329]
+anchors_preset = -1
+anchor_left = 0.216
+anchor_top = 0.18300001
+anchor_right = 0.84700006
+anchor_bottom = 1.2160001
+offset_left = -414.72
+offset_top = -197.64001
+offset_right = -309.11475
+offset_bottom = -195.28003
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_lf0co")
+expand_mode = 3
+
+[node name="SFX" type="AudioStreamPlayer" parent="." unique_id=564209251]
+process_mode = 3
+stream = ExtResource("3_wqac2")
+pitch_scale = 1.1
