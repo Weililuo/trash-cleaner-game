@@ -6,7 +6,9 @@ A fast-paced, 2D top-down roguelike game built with **Godot 4**. Take control of
 
 
 
-https://github.com/user-attachments/assets/3e4a3b27-e5b9-4775-9767-9e34f2cb023d
+
+https://github.com/user-attachments/assets/c1931dac-1235-44cb-835d-017d3037c721
+
 
 
 
