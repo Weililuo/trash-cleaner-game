@@ -2,6 +2,18 @@
 
 A fast-paced, 2D top-down roguelike game built with **Godot 4**. Take control of a cleaning robot to navigate an expanding map, collect dynamically spawning trash, and survive as long as possible before the garbage overwhelms you!
 
+## 🎥 Gameplay Demo
+
+
+
+https://github.com/user-attachments/assets/3e4a3b27-e5b9-4775-9767-9e34f2cb023d
+
+
+
+*A preview of the trash cleaning mechanic and the arcade-style Game Over impact sequence.*
+
+---
+
 ## ✨ Key Features
 
 * **Dynamic Spawning System:** Trash items spawn randomly across the map. The game challenges the player to manage the escalating mess.
